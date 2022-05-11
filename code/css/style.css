@@ -1,0 +1,432 @@
+/*************REGLE GENERAL********/
+:root
+{
+    --normalblue:#0065FC;
+    --lightblue: #DEEBFF;
+    --grey: #F2F2F2;
+}
+main, header
+{
+    
+    padding-right: 50px;
+    padding-left: 50px;
+} 
+body
+{
+    font-family: 'raleway', Arial, Helvetica, sans-serif; 
+    padding:0;
+    margin: 0;
+}
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+ul
+{
+    list-style-type: none;
+}
+img
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+/*************TOP HEADER********/
+#nav{
+    display: flex;
+}
+.navi
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.navi a 
+{
+    margin-left: 5%;
+    padding: 30px 15px 0 15px;
+    border-top: solid 3px white;
+}
+.navi a:hover
+{
+    color: var(--normalblue);
+    border-top: solid 3px var(--normalblue);
+}
+/*************BARRE DE RECHERCHE********/
+.localPoint
+{
+    background-color: var(--grey);
+    width: 20px;
+    height: 30px;
+    border-radius: 20% 0% 0% 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 9.55px;
+}
+.searchAll
+{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+#searchButton
+{
+    background-color: #0065FC;
+    font-weight: bold;
+    border: 0;
+    border-radius: 0% 16px 16px 0%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    padding:  15px;
+}
+
+.searchInput
+{
+    padding: 15.8px;
+    border: 1px solid var(--grey);
+}
+input::placeholder
+{
+    color: black;
+    font-weight: bolder;
+    font-size: 15px;
+}
+#searchButton > i
+{
+    display: none;
+}
+
+/*************ICONES********/
+.icone
+{
+    background-color: var(--lightblue);
+    width: 30px;
+    height: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--normalblue);
+}
+/*************FILTRE********/
+.filterText > a
+{
+    font-size: 13px;
+}
+.filtres ul
+{
+    display: flex;
+}
+.filtres
+{
+    display: flex;    
+    align-items: center;
+}
+.filterText 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    display: flex;
+    border-radius: 50px;
+    justify-content: space-between;
+    border: solid var(--grey);
+    border-left: 0px;
+}
+.filtres ul > li > a
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+}
+.filtres ul > li:hover
+{
+    background-color: var(--lightblue);
+}
+/*************INFO ********/
+.info
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+.info p 
+{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.infoIcone
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid var(--grey);
+    color: var(--normalblue);
+    font-size: 13px;
+    margin-top: 8px;
+}
+/*************ETOILE********/
+.starGrise
+{
+    color: gray;
+}
+.star
+{
+    color: var(--normalblue);
+}
+.etoile
+{
+    font-size: 10px;
+}
+
+/*************MARSEILLE ET POP********/
+.hebsPop
+{
+    display: flex;
+}
+/*************SECTION HEBERGEMENT A MARSEILLE********/
+
+#hebs
+{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--grey);
+    border-radius: 15px;
+    flex:7;
+    text-align: start;
+    height: 100%;
+}
+.hebs2 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.marseille
+{
+    background-color:white;
+    height: 190px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.hebs2 > a
+{
+    width: 29%;
+}
+.alcImg img
+{
+    border-radius: 15px 15px 0 0;
+}
+.alcImg
+{
+    height: 60%;
+    width: 100%;
+}
+.alcSt
+{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-evenly;
+}
+.showMore, .titleHost
+{
+    display: flex;
+    font-weight: bold;
+    text-align:justify;
+    padding-left: 27px;
+}
+.titleHost
+{
+    padding-top: 10px;
+}
+.showMore
+{
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.showMore:hover
+{
+    color: var(--normalblue);
+}
+.alcSt > h3
+{
+    margin: 0;  
+    padding: 0;
+    font-size: 13px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.alcSt > small
+{
+    margin-bottom: 5px;
+}
+/*************LES PLUS POPULAIRE********/
+.titleHostPopulaire
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.titleHostPopulaire > i 
+{
+    font-size: 25px;
+}
+#popu
+{
+    display: flex;
+    background-color:var(--grey);
+    border-radius: 15px;
+    flex: 3;
+    margin-left: 15px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.popu2 
+{ 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.populaire
+{ 
+    display: flex;
+    background-color:white;
+    border-radius: 15px;
+    width: 100%;
+    height: 130px;
+    padding: 5px 0px 5px 5px;
+}
+.popu2 > a 
+{
+    height: 33%;
+    width: 100%;
+}
+.popSt
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+.popImg img
+{
+    border-radius: 15px 0 0 15px;
+}
+.popImg 
+{
+    width: 40%;
+}
+.etoiletext
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: space-between;
+    height: 100%;
+    width: 60%;
+}
+.popSt > h3
+{
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+small
+{
+    font-size: 10px;
+}
+/*************ACTIVITE A MARSEILLE********/
+.acti2
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.acti2 > *
+{
+    width: 20%;
+}
+.activites
+{
+    border-radius: 15px;
+    box-shadow: 1px 1px 13px var(--grey);
+    height: 410px;
+    border: 2px solid var(--grey);
+}
+.activitesPetit
+{
+    height: 195px;
+    border: 2px solid var(--grey);
+    border-radius: 15px;
+    box-shadow: 1px 1px 13px var(--grey);
+    margin-bottom: 15px;
+}
+
+.actiImg
+{
+    height:70%;
+}
+.actiImgGrand
+{
+    height: 85%;
+}
+.actiImgGrand > img
+{
+    border-radius: 15px 15px 0px 0px;
+}
+.actiImg > img
+{
+    border-radius: 15px 15px 0px 0px;
+}
+.actiSt
+{
+    font-size: 12px;
+    padding-left: 10px;
+}
+.box 
+{
+    display: flex;
+    flex-direction: column;
+}
+/*************FOOTER********/
+footer
+{
+    background-color: var(--grey);
+    display: flex;  
+    justify-content: space-evenly;
+}
+.footerBox
+{
+    margin-right: 13%;
+}
+.footerBox > ul > li
+{
+    margin-bottom: 10%;
+}
+.gras 
+{
+    font-size: 20px;
+}
+.gras + li, li
+{
+    font-size: 12px;
+}
+/*******************************/

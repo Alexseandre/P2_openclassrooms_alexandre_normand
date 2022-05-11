@@ -1,0 +1,86 @@
+@media screen and (min-width:768px) and (max-width: 992px)
+{
+body, main, header 
+{
+    margin:0;
+    padding: 10px;
+    font-size: inherit;
+}
+.filtres
+{
+    display: block;
+}
+.populaire
+{
+    flex-direction: column;
+    height: 100%;
+    border-radius: 15px;
+    padding: 5px;
+}
+.titleHost
+{
+    padding-top:  10px;
+}
+.popImg img
+{
+    border-radius: 15px 15px 0 0;
+}
+.popImg
+{
+    width: 100%;
+    height: 50%;
+}
+.filtres > ul 
+{
+    margin: 0;
+    padding: 0;
+}
+.etoiletext
+{
+    height: 50%;
+    width: 100%;
+}
+.popSt > small
+{
+    margin-bottom: 10px;
+}
+.showMore, .titleHost
+{
+    padding-left: 30px;
+}
+.marseille
+{
+    height: 290px;
+    width: 100%;
+    
+}
+.popu2 
+{ 
+    display: flex;
+    flex-direction: column;
+}
+.popu2 > a 
+{
+    height: 30%;
+}
+.alcSt 
+{
+    justify-content: space-evenly;
+    height: 40%;
+}
+.alcImg
+{
+    height: 60%;
+    width: 100%;
+}
+.hebs2 > a 
+{
+    width: 40%;
+    height: 90%;
+}
+.titleHostPopulaire h3
+{
+    padding-top: 10px;
+}
+
+}
